@@ -1,0 +1,21 @@
+.navbar-default {
+  border: none;
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  padding: 13px;
+}
+
+/*@media (min-width: 768px) { */
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+  }
+
+
+body { padding-top: 70px; }
