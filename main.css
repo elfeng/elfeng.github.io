@@ -26,11 +26,19 @@
   max-width: 1000px;
 }
 
+#personal-summary h3 {
+  font-family: 'Pacifico';
+}
+
 #personal-summary p {
   font-family: sans-serif;
   font-size: 10pt;
   color: #545454;
   font-weight: 300;
+}
+
+.col-md-3 {
+  padding-right: 0px;
 }
 
 #profile-picture {
@@ -39,9 +47,14 @@
   top: 30px;
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.col-md-9 {
+  padding-left: 30px;
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 80px;
 }
