@@ -81,7 +81,12 @@ h1 {
   position: relative;
 	overflow: hidden;	
   padding: 0px;
-/*  border-style: none;*/
+  border-style: none;
+}
+
+#project-cover-3 {
+  border: 1px solid #989898;
+  border-radius: 5px;
 }
 
 #projects .caption {
@@ -89,16 +94,41 @@ h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.5);
-	width: 258px;
-	height: 258px;
+	background: rgba(0,0,0,0.6);
+	width: 260px;
+	height: 260px;
   border-radius: 6px;
 	color:#ffffff !important;
 }
 
-#project-cover-3 {
-  border: 1px solid #989898;
-  border-radius: 5px;
+#projects .caption h3 {
+  font-size: 23px;
+  font-family: 'Kameron';
+  font-weight: 700;
+  margin-top: 90px;
+}
+
+#projects .caption a {
+  width: 140px;
+  line-height: 22px;
+/*  box-sizing: border-box;*/
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  color: #ffffff;
+  background: transparent;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+/*
+  text-align: center;
+margin: auto;
+  vertical-align:middle;
+*/
+}
+
+#projects .caption a:hover {
+  background: #ffffff;
+  color: #000000;
 }
 
 #contact {

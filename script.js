@@ -7,6 +7,6 @@ $(document).ready(function(){
 		function(){
 			$(this).find('.caption').fadeOut(205);
 		}
-	);	
+  );
  
 });	
