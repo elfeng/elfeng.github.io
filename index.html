@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Bootstrap contact form with PHP example by BootstrapBay.com.">
+    <meta name="author" content="BootstrapBay.com">
     <title>Elaine Feng's Little Space</title>
 
     <!-- Google Fonts -->
@@ -131,24 +133,32 @@
       <hr>
       <h1>Say hello</h1>
       <br>
-      <form class="form-horizontal container-fluid">
+      <form class="form-horizontal container-fluid" id="contactForm" role="form" method="post" action="index.php">
         <div class="form-group">
-          <label for="inputName">Name</label>
-          <input type="text" class="form-control" id="inputName" placeholder="Name">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+          <?php echo "<p class='text-danger'>$errName</p>";?>
         </div>
         <div class="form-group">
           <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+          <?php echo "<p class='text-danger'>$errEmail</p>";?>
         </div>
         <div class="form-group">
           <label>Message</label>
-          <textarea class="form-control" rows="9" placeholder="What's your message for me?"></textarea>
+          <textarea class="form-control" rows="9" name="message" placeholder="What's your message for me?"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+          <?php echo "<p class='text-danger'>$errMessage</p>";?>
         </div>
-        <button type="submit" class="btn btn-default form-group">Send</button>
+        <button type="submit" class="btn btn-default form-group" id="submit" name="submit" value="Send">Send</button>
+        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+        <div class="form-group">
+						<?php echo $result; ?>	
+					</div>
       </form>
     </div>
     
     <br><br><br><br><br><br>
+<!--    <?php include('index.php'); ?>-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
