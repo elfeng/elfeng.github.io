@@ -140,15 +140,28 @@ margin: auto;
   max-width: 500px;
 }
 
+#footer p {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 9pt;
+}
 #footer .fa-ul {
-  margin-left: 70px;
-  text-align: center;
+  margin-left: 60px;
 }
 
 #footer li {
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+#footer li a {
+  color: #545454;
+}
+
+#footer li a:hover {
+  color: #000000;
 }
 
 body {
