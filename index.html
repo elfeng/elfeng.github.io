@@ -22,6 +22,9 @@
     <!-- Bootstrap -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="main.css">
 
@@ -136,18 +139,18 @@
       <form class="form-horizontal container-fluid" id="contactForm" role="form" method="post" action="index.php">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-          <?php echo "<p class='text-danger'>$errName</p>";?>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+<!--          <?php echo "<p class='text-danger'>$errName</p>";?>-->
         </div>
         <div class="form-group">
           <label for="inputEmail">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-          <?php echo "<p class='text-danger'>$errEmail</p>";?>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+<!--          <?php echo "<p class='text-danger'>$errEmail</p>";?>-->
         </div>
         <div class="form-group">
           <label>Message</label>
-          <textarea class="form-control" rows="9" name="message" placeholder="What's your message for me?"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-          <?php echo "<p class='text-danger'>$errMessage</p>";?>
+          <textarea class="form-control" rows="9" name="message" placeholder="What's your message for me?"></textarea>
+<!--          <?php echo "<p class='text-danger'>$errMessage</p>";?>-->
         </div>
         <button type="submit" class="btn btn-default form-group" id="submit" name="submit" value="Send">Send</button>
         <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
@@ -157,9 +160,24 @@
       </form>
     </div>
     
-    <br><br><br><br><br><br>
+    <br><br><br>
 <!--    <?php include('index.php'); ?>-->
 
+    <!-- Footer -->
+    <div id="footer" class="container-fluid text-center">
+      <div class="row">
+      <div class="col-md-12">
+        <ul class="fa-ul list-inline">
+          <li><i class="fa-li fa fa-linkedin-square fa-lg"></i></li>
+          <li><i class="fa-li fa fa-twitter-square fa-lg"></i></li>
+          <li><i class="fa-li fa fa-github-square fa-lg"></i></li>
+          <li><i class="fa-li fa fa-envelope-square fa-lg"></i></li>
+        </ul>
+      </div>
+        </div>
+      <p>© Copyright 2016 Elaine Feng</p>
+    </div>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
