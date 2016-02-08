@@ -135,6 +135,10 @@ margin: auto;
   max-width: 1000px;
 }
 
+.form-horizontal {
+  max-width: 500px;
+}
+
 body {
   padding-top: 80px;
 }
