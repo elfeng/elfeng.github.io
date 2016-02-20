@@ -38,15 +38,24 @@
 //        $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
 //      }
 //    }
+    if (!$errName && !$errEmail && !$errMessage) {
+    if (mail ($to, $body, $from)) {
+        $result='<div class="alert alert-success"><h2><span class="glyphicon glyphicon-ok"></span> Message sent!</h2><h3>Thank you for contacting us. Someone will be in touch with you soon.</h3></div>';
+    } else {
+        $result='<div class="alert alert-danger"><h2><span class="glyphicon glyphicon-warning-sign"></span> Sorry there was a form processing error.</h2> <h3>Please try again later.</h3></div>';
+       }
+    }
+  }
+
     
-    // send email
-$success = mail($to, $subject, $body, $email);
- 
-// redirect to success page
-if ($success){
-   echo "success";
-}else{
-    echo "invalid";
-}
-	}
+//    // send email
+//$success = mail($to, $body, $email);
+// 
+//// redirect to success page
+//if ($success){
+//   echo "success";
+//}else{
+//    echo "invalid";
+//}
+//	}
 ?>

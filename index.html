@@ -23,7 +23,6 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
     <script type="text/javascript" src="script.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,7 +75,7 @@
           <p>Elaine loves to hang out at programming contests and tech conferences.</p>
           <p>Elaine did not start programming in high school/elementary school/at 3, but she is serious about making an impact with technology.</p>
           <p>Elaine would go out of her way over abrupt ideas that pump her up (e.g. making a video for old friends in home country just so they would miss me).</p>
-          <p>Elaine thinks Apple Calendar is awesome.</p>
+          <p>Elaine uses Google Search &amp; Apple Calendar every day more than the number of times she drinks water...DUH.</p>
           <p>Elaine is annoyed with how LinkedIn doesn't support changing the cover picture for projects.</p>
           <p>Fun Fact?: Elaine has been losing a bunch of hair since living in --> V-A-N-C-O-U-V-E-R. This is what she blames for all her bad hair days.</p>
         </div>
@@ -135,20 +134,21 @@
       <hr>
       <h1>Say hello</h1>
       <form class="form-horizontal container-fluid" id="contactForm" role="form" method="post" action="index.php">
+        <input type="hidden" name="submitted" value="1" />
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-<!--          <?php echo "<p class='text-danger'>$errName</p>";?>-->
+          <?php echo "<p class='text-danger'>$errName</p>";?>
         </div>
         <div class="form-group">
           <label for="inputEmail">Email</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-<!--          <?php echo "<p class='text-danger'>$errEmail</p>";?>-->
+          <?php echo "<p class='text-danger'>$errEmail</p>";?>
         </div>
         <div class="form-group">
           <label>Message</label>
           <textarea class="form-control" rows="9" name="message" placeholder="What's your message for me?"></textarea>
-<!--          <?php echo "<p class='text-danger'>$errMessage</p>";?>-->
+          <?php echo "<p class='text-danger'>$errMessage</p>";?>
         </div>
         <button type="submit" class="btn btn-default form-group" id="submit" name="submit" value="Send">Send</button>
         <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
@@ -158,7 +158,7 @@
       </form>
     </div>
   
-<!--    <?php include('index.php'); ?>-->
+    <?php include('index.php'); ?>
 
     <!-- Footer -->
     <div id="footer" class="container-fluid  text-center">
