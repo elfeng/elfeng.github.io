@@ -54,8 +54,8 @@
             </a>
           <ul class="nav navbar-nav">
             <li><a href="index.html">ABOUT</a></li>
-            <li><a href="#projects-real">PROJECTS</a></li>
-            <li><a href="#contact-real">CONTACT</a></li>      
+            <li><a class='smoothScroll' href="#projects-section">PROJECTS</a></li>
+            <li><a class='smoothScroll' href="#contact-section">CONTACT</a></li>      
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -80,13 +80,13 @@
           <p>Fun Fact?: Elaine has been losing a bunch of hair since living in --> V-A-N-C-O-U-V-E-R. This is what she blames for all her bad hair days.</p>
         </div>
       </div>
-      <div id="projects-real"></div>
+      <div id="projects-section"></div>
     </div>
     
     
     <!-- Projects section -->
     <div id="projects" class="container-fluid">
-      <hr id="projects-real">
+      <hr>
       <h1>My latest work</h1>
       <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4">
@@ -97,7 +97,7 @@
             </div>
             <img id="project-cover-1" src="images/project-cover-1.jpg" class="img-responsive img-rounded" alt="Responsive image">
             <br>
-            <p>A website for local artists to share creative work.</p>
+            <p>A web app for local artists to share creative work.</p>
           </div>
         </div>
 
@@ -109,7 +109,7 @@
             </div>
             <img id="project-cover-2" src="images/project-cover-2.jpg" class="img-responsive img-rounded" alt="Responsive image">
             <br>
-            <p>A website for B.C. libraries lookup and archive.</p>
+            <p>A web app for B.C. libraries lookup and archival.</p>
           </div>
         </div>
 
@@ -121,8 +121,8 @@
             </div>
             <img id="project-cover-3" src="images/project-cover-3.png" class="img-responsive img-rounded" alt="Responsive image">
             <br>
-            <div id="contact-real"></div>
-            <p>My e-portfolio. Click to see how it came to be.</p>
+            <div id="contact-section"></div>
+            <p>My e-portfolio built from scratch. Click to see how it came to be.</p>
           </div>
         </div>
       </div>
@@ -158,7 +158,7 @@
       </form>
     </div>
   
-    <?php include('index.php'); ?>
+<!--    <?php include('index.php'); ?>-->
 
     <!-- Footer -->
     <div id="footer" class="container-fluid  text-center">
@@ -179,5 +179,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/smoothscroll.js"></script>
   </body>
 </html>
