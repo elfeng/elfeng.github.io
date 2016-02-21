@@ -9,10 +9,7 @@ $(document).ready(function(){
 		}
   );
   
-  $('.projects-scroll').click(
-    function() {
-      $('#projects-section').scroll();
-  });
+  
   
   $("#contactForm").submit(function(event){
     // cancels the form submission

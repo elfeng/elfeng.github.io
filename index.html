@@ -81,6 +81,42 @@
       <div id="projects-section"></div>
     </div>
     
+
+<!-- Modal for Project #1 -->
+<div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <div class="close" data-dismiss="modal"><span>&times;</span></div>
+      <div class="container-fluid">
+        <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <h3>WORKSHOP</h3>
+          <br>
+          <p>Elaine is a 3rd-year UBC Computer Science coding monkey.</p>
+          <p>Elaine loves to hang out at programming contests and tech conferences.</p>
+          <p>Elaine did not start programming in high school/elementary school/at 3, but she is serious about making an impact with technology.</p>
+          <p>Elaine would go out of her way over abrupt ideas that pump her up (e.g. making a video for old friends in home country just so they would miss me).</p>
+          <p>Elaine uses Google Search &amp; Apple Calendar every day more than the number of times she drinks water...DUH.</p>
+          <p>Elaine is annoyed with how LinkedIn doesn't support changing the cover picture for projects.</p>
+          <p>Fun Fact?: Elaine has been losing a bunch of hair since living in --> V-A-N-C-O-U-V-E-R. This is what she blames for all her bad hair days.</p>
+          <h3>Hi, this is Elaine.</h3>
+          <br>
+          <p>Elaine is a 3rd-year UBC Computer Science coding monkey.</p>
+          <p>Elaine loves to hang out at programming contests and tech conferences.</p>
+          <p>Elaine did not start programming in high school/elementary school/at 3, but she is serious about making an impact with technology.</p>
+          <p>Elaine would go out of her way over abrupt ideas that pump her up (e.g. making a video for old friends in home country just so they would miss me).</p>
+          <p>Elaine uses Google Search &amp; Apple Calendar every day more than the number of times she drinks water...DUH.</p>
+          <p>Elaine is annoyed with how LinkedIn doesn't support changing the cover picture for projects.</p>
+          <p>Fun Fact?: Elaine has been losing a bunch of hair since living in --> V-A-N-C-O-U-V-E-R. This is what she blames for all her bad hair days.</p>
+        </div>
+      </div>
+      </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+
     
     <!-- Projects section -->
     <div id="projects" class="container-fluid">
@@ -91,7 +127,7 @@
           <div class="thumbnail">
             <div class="caption" >
               <h3>WORKSHOP</h3>
-              <a href="https://ubcdevbrew-workshop.herokuapp.com" class="btn btn-default">VIEW PROJECT</a>
+              <a href="https://ubcdevbrew-workshop.herokuapp.com" class="btn btn-default" data-toggle="modal" data-target="#firstModal">VIEW PROJECT</a>
             </div>
             <img id="project-cover-1" src="images/project-cover-1.jpg" class="img-responsive img-rounded" alt="Responsive image">
             <br>
@@ -136,22 +172,22 @@
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" class="form-control" id="name" name="name" placeholder="Name">
-          <?php echo "<p class='text-danger'>$errName</p>";?>
+<!--          <?php echo "<p class='text-danger'>$errName</p>";?>-->
         </div>
         <div class="form-group">
           <label for="inputEmail">Email</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="Email">
-          <?php echo "<p class='text-danger'>$errEmail</p>";?>
+<!--          <?php echo "<p class='text-danger'>$errEmail</p>";?>-->
         </div>
         <div class="form-group">
           <label>Message</label>
           <textarea class="form-control" rows="9" name="message" placeholder="What's your message for me?"></textarea>
-          <?php echo "<p class='text-danger'>$errMessage</p>";?>
+<!--          <?php echo "<p class='text-danger'>$errMessage</p>";?>-->
         </div>
         <button type="submit" class="btn btn-default form-group" id="submit" name="submit" value="Send">Send</button>
         <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
         <div class="form-group">
-						<?php echo $result; ?>	
+<!--						<?php echo $result; ?>	-->
 					</div>
       </form>
     </div>

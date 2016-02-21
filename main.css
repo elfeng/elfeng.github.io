@@ -79,6 +79,28 @@
 }
 
 
+/* modals */
+.modal .container-fluid {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.modal .close {
+  font-size: 60px;
+  padding-right: 14px; 
+}
+
+.modal .close:hover {
+  color: #ffb6c1;
+}
+
+.modal h3 {
+  font-size: 23px;
+  font-family: 'Kameron', 'Palatino', serif;
+  font-weight: 700;
+  text-align: center;
+}
+
 /* projects */
 #projects {
   max-width: 1000px;
@@ -125,7 +147,7 @@
 	left: 0;
 	background: rgba(0,0,0,0.6);
 	width: 260px;
-	height: 260px;
+	height: 260px;    
   border-radius: 6px;
 	color:#ffffff !important;
 }
@@ -138,7 +160,7 @@
 }
 
 #projects .caption a {
-  width: 140px;
+  width: 140px;                     
   line-height: 22px;
 /*  box-sizing: border-box;*/
   border: 2px solid #ffffff;
