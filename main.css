@@ -84,7 +84,7 @@
   margin: 30px 0;
 }
 
-.modal .list-inline {
+.modal-body .list-inline {
   margin: 30px 0;
   font-family: sans-serif;
   font-weight: 300;
@@ -116,6 +116,21 @@
   color: #545454;
   margin-top: 40px;
   margin-bottom: 15px;
+}
+
+.modal-body .fa-li {
+  left: 0;
+  width: 40px;
+  display: inline-block;
+  position: relative;
+}
+
+.modal-body li a {
+  color: #545454;
+}
+
+.modal-body li a:hover {
+  color: #ffb6c1;
 }
 
 .modal .close {
