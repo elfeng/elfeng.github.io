@@ -12,6 +12,13 @@ $(document).ready(function(){
   var contactform =  document.getElementById('contactForm');
     contactform.setAttribute('action', '//formspree.io/' + 'eleanor52' + '@' + 'live' + '.' + 'ca');
   
+  $.ajax({
+    url: "//formspree.io/eleanor52@live.ca", 
+    method: "POST",
+    data: {message: "hello!"},
+    dataType: "json"
+  });
+  
 //  $("#contactForm").submit(function(event){
 //    // cancels the form submission
 //    event.preventDefault();
