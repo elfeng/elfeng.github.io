@@ -129,8 +129,10 @@
   color: #545454;
 }
 
-.modal-body li a:hover {
-  color: #ffb6c1;
+.modal-body .fa-times-circle-o {
+  color: #c0c0c0;
+  text-align: center;
+  width: 100%;
 }
 
 .modal .close {
@@ -138,7 +140,7 @@
   padding-right: 14px; 
 }
 
-.modal .close:hover {
+.modal .close:hover, .modal-body li a:hover, .modal-body .fa-times-circle-o:hover {
   color: #ffb6c1;
 }
 
