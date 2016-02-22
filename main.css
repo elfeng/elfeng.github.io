@@ -150,12 +150,23 @@
   text-align: center;
 }
 
-.carousel-inner .item {
-    height: 470px;
-}
-
 .carousel-inner img {
   margin-bottom: 0;
+}
+
+.carousel-indicators li {
+  border-color: #ffb6c1;
+}
+
+.carousel-caption {
+  color: #ff699b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-control {
+  color: #ffb6c1;
 }
 
 
