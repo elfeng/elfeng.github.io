@@ -150,6 +150,14 @@
   text-align: center;
 }
 
+.carousel-inner .item {
+    height: 470px;
+}
+
+.carousel-inner img {
+  margin-bottom: 0;
+}
+
 
 /* --------- projects --------- */
 #projects {
