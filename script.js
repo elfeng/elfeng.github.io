@@ -9,7 +9,8 @@ $(document).ready(function(){
 		}
   );
   
-  
+  var contactform =  document.getElementById('contactForm');
+    contactform.setAttribute('action', '//formspree.io/' + 'eleanor52' + '@' + 'live' + '.' + 'ca');
   
 //  $("#contactForm").submit(function(event){
 //    // cancels the form submission
