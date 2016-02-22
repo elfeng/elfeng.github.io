@@ -105,7 +105,7 @@
   margin-bottom: 25px;
 }
 
-.modal-body #project1-description {
+.modal-body #project-description {
   text-align: left;
 }
 
@@ -125,7 +125,7 @@
   position: relative;
 }
 
-.modal-body li a {
+.modal-body .fa-ul a {
   color: #545454;
 }
 
@@ -140,7 +140,7 @@
   padding-right: 14px; 
 }
 
-.modal .close:hover, .modal-body li a:hover, .modal-body .fa-times-circle-o:hover {
+.modal .close:hover, .modal-body .fa-ul a:hover, .modal-body .fa-times-circle-o:hover {
   color: #ffb6c1;
 }
 

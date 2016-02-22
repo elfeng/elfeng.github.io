@@ -102,15 +102,56 @@
                   <p>Sign-up page</p>
                   <img id="project1-modal2" src="images/project1-modal2.png" class="img-responsive img-rounded" alt="Responsive image">
                   <p>Feed view</p>
-                  <p id="project1-description">WorkShop aims to provide a platform for local artists to upload and share their creative work with others (e.g. photos, graphic designs). It is a test app developed in one of the Web Teams at <a href="http://www.ubclaunchpad.com">UBC Launch Pad</a> as their first project, and serves as a predecessor for <a href="http://www.theworkdesk.ca">WorkDesk</a>. User can create a profile, upload an image file from local with a description, and browse all images posted in the feed.</p>
+                  <p id="project-description">WorkShop aims to provide a platform for local artists to upload and share their creative work with others (e.g. photos, graphic designs). It is a test app developed in one of the Web Teams at <a href="http://www.ubclaunchpad.com">UBC Launch Pad</a> as their first project, and serves as a predecessor for <a href="http://www.theworkdesk.ca">WorkDesk</a>. User can create a profile, upload an image file from local with a description, and browse all images posted in the feed.</p>
                   <h4>RESPONSIBILITIES</h4>
                   <ul id="responsibilities">
-                    <li>Implemented a responsive UI for the sign-up page, the navbar, and the header section of the landing page (which includes a sign-in form) following a mockup.</li>
+                    <li>Implemented a responsive UI for the sign-up page, the navbar, and the header section of the landing page (which includes a sign-in form) following respective mockups.</li>
                     <li>Learned HTML, CSS, and Bootstrap in 3 weeks.</li>
                   </ul>
                   <ul class="fa-ul list-inline text-center">
                     <li><a href="https://github.com/ubc-dev-brew/workshop"><i class="fa-li fa fa-github-square fa-3x"></i></a></li>
                     <li><a href="https://ubcdevbrew-workshop.herokuapp.com"><i class="fa-li fa fa-external-link-square fa-3x"></i></a></li>
+                  </ul>
+                  <i role=button class="fa fa-times-circle-o fa-5x" data-dismiss="modal"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Modal for Project #2 -->
+    <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="secondModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="close" data-dismiss="modal"><span>&times;</span></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="modal-body">
+                  <h2>LIBRARY FINDER</h2>
+                  <ul class="list-inline text-center">
+                    <li>Platform: <strong>Web</strong></li>
+                    <li>Tools: <strong>GWT, AJAX, JSON, JUnit, Eclipse, Git, HTML, CSS</strong></li>
+                  </ul>
+                  <img id="project2-modal1" src="images/project2-modal1.png" class="img-responsive img-rounded" alt="Responsive image">
+                  <p>Login page</p>
+                  <img id="project2-modal2" src="images/project2-modal2.png" class="img-responsive img-rounded" alt="Responsive image">
+                  <p>Map view</p>
+                  <p id="project-description">Library Finder was written in Java using the Google Web Toolkit framework. AJAX was used for client-server communication. Users can log in to the web service with a Gmail account. On the web page, there is a map with clickable icons marking library locations for a selected area in B.C. Users can search based on city, add libraries to a favourites list, and go to a library location on the map from either their favourites list or the table below the map.</p>
+                  <h4>RESPONSIBILITIES</h4>
+                  <ul id="responsibilities">
+                    <li>Imported and parsed JSON dataset of BC libraries from <a href="http://www.data.gov.bc.ca">DataBC</a>.</li>
+                    <li>Wrote JUnit tests for parser.</li>
+                    <li>Implemented login using Gmail authentication.</li>
+                    <li>Built login page with HTML and CSS</li>
+                    <li>Implemented Facebook integration to enable sharing of the web page.</li>
+                  </ul>
+                  <ul class="fa-ul list-inline text-center">
+                    <li><a href="https://github.com/cs310-2015ST1/Alpha"><i class="fa-li fa fa-github-square fa-3x"></i></a></li>
+                    <li><a href="http://1-dot-libraryfinder-973.appspot.com/"><i class="fa-li fa fa-external-link-square fa-3x"></i></a></li>
                   </ul>
                   <i role=button class="fa fa-times-circle-o fa-5x" data-dismiss="modal"></i>
                 </div>
@@ -143,7 +184,7 @@
           <div class="thumbnail">
             <div class="caption">
               <h3>LIBRARY FINDER</h3>
-              <a href="http://1-dot-libraryfinder-981.appspot.com" class="btn btn-default">VIEW PROJECT</a>
+              <a href="http://1-dot-libraryfinder-973.appspot.com" class="btn btn-default" data-toggle="modal" data-target="#secondModal">VIEW PROJECT</a>
             </div>
             <img id="project-cover-2" src="images/project-cover-2.jpg" class="img-responsive img-rounded" alt="Responsive image">
             <br>
