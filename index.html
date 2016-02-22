@@ -314,10 +314,11 @@
 
     
     <!-- Contact section -->
+    <?php include('index.php'); ?>
     <div id="contact" class="container-fluid">
       <hr>
       <h1>Say hello</h1>
-      <form class="form-horizontal container-fluid" id="contactForm" role="form" method="post" action="index.php">
+      <form class="form-horizontal container-fluid" id="contactForm" role="form" method="post" action="//formspree.io/eleanor52@live.ca">
         <input type="hidden" name="submitted" value="1" />
         <div class="form-group">
           <label for="name">Name</label>
@@ -325,24 +326,24 @@
 <!--          <?php echo "<p class='text-danger'>$errName</p>";?>-->
         </div>
         <div class="form-group">
-          <label for="inputEmail">Email</label>
+          <label for="email">Email</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="Email">
 <!--          <?php echo "<p class='text-danger'>$errEmail</p>";?>-->
         </div>
         <div class="form-group">
-          <label>Message</label>
-          <textarea class="form-control" rows="9" name="message" placeholder="What's your message for me?"></textarea>
+          <label for="message">Message</label>
+          <textarea class="form-control" rows="9" id="message" name="message" placeholder="What's your message for me?"></textarea>
 <!--          <?php echo "<p class='text-danger'>$errMessage</p>";?>-->
         </div>
-        <button type="submit" class="btn btn-default form-group" id="submit" name="submit" value="Send">Send</button>
-        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+<!--        <button type="submit" class="btn btn-default form-group" id="submit" name="submit" value="Send">Send</button>-->
+        <input type="submit" class="button next" id="msgSubmit" name="submit" value="send">
+<!--        <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>-->
         <div class="form-group">
 <!--						<?php echo $result; ?>	-->
 					</div>
       </form>
     </div>
   
-<!--    <?php include('index.php'); ?>-->
 
     <!-- Footer -->
     <div id="footer" class="container-fluid  text-center">

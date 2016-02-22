@@ -1,19 +1,18 @@
 <?php
 /* submitting the form */
 
-	if (isset($_POST["submit"])) {
+	if (isset($_POST['contact_submit'])) {
     
     // declare variables to extract data 
-		$name = $_POST['name'];
-		$email = $_POST['email'];
+		$name = trim($_POST['name']);
+		$email = trim($_POST['email']);
 		$message = $_POST['message'];
     
     // declare additional variables required to send email 
-		$from = 'Demo Contact Form'; 
 		$to = 'eleanor52@live.ca'; 
-		$subject = 'Message from Contact Demo ';
+		$subject = "$name sent your a message via your contact form";
 		
-		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
+		$body ="From: $name\n Email: $email\n Message:\n $message";
     
 		// Check if name has been entered
 		if (!$_POST['name']) {
@@ -39,7 +38,7 @@
 //      }
 //    }
     if (!$errName && !$errEmail && !$errMessage) {
-    if (mail ($to, $body, $from)) {
+    if (mail ($to, $subject, $body)) {
         $result='<div class="alert alert-success"><h2><span class="glyphicon glyphicon-ok"></span> Message sent!</h2><h3>Thank you for contacting us. Someone will be in touch with you soon.</h3></div>';
     } else {
         $result='<div class="alert alert-danger"><h2><span class="glyphicon glyphicon-warning-sign"></span> Sorry there was a form processing error.</h2> <h3>Please try again later.</h3></div>';
